@@ -1,0 +1,15 @@
+This is the documentation file describing the usage and internal design of the UDP Safe File Transfer tool. 
+
+The tool is meant to mimic the functionality of a file transfer between a client and a server. 
+To generate an executable version of the tool, run "make" at the top level of the lab directory. 
+This will place two executable files in the bin folder: myserver and myclient. 
+You can run the tool from the top directory or in the bin directory. 
+In the case that you are in the bin directory, the tool's usage would be as followed:
+
+    1. Run your server with a desired port:
+        ./myserver <serverPort> <dropRate>
+    2. Identify server IP address (serverIp).
+    3. Run your client against your server with a file of your choice:
+        ./myclient <serverIp> <serverPort> <mss> <windowsize> <inputPath> <outputPath>
+
+
